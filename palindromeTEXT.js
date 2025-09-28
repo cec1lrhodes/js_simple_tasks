@@ -1,9 +1,8 @@
-function isPalindrome(text){
-    text = text.toLowerCase().replace(/[^a-z0-9]/g, "");
-     let rev = text.split('').reverse().join('');
-     return text === rev;
+function isPalindrome(text) {
+  text = text.toLowerCase().replace(/[^a-z0-9]/g, "");
+  let rev = text.split("").reverse().join("");
+  return text === rev;
 }
-
 
 console.log(isPalindrome("A man, a plan, a canal, Panama!")); // true
 console.log(isPalindrome("No 'x' in Nixon")); // true
